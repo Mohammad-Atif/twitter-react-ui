@@ -6,13 +6,9 @@ export const TweetBox = () => {
     
 
     return (
-        <div className="tweetBoxParent">
-            <p>Say Something !!</p>
-            <div className="tweetBox">
+        <div className="tweetBox">
             <img src={profilePic} />
-            <input type={'text'} className="tweetText"/>
+            <input type={'text'} placeholder="Say Something !!" className="tweetText"/>
         </div>
-        </div>
-        
     );
 }
