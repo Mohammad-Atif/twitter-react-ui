@@ -9,7 +9,8 @@ const NavItem = ({itemName}) => {
 };
 
 export const Header = () =>{
-    return (<div className="header">
+    return (
+    <div className="header">
         <img src={logo} />
         <img src={userLogo} />
         </div>);
