@@ -8,10 +8,10 @@ const NavItem = ({itemName}) => {
     );
 };
 
-export const Header = () =>{
+export const Header = ({btnCLick}) =>{
     return (
     <div className="header">
-        <img src={logo} />
-        <img src={userLogo} />
+        <img src={logo} onClick = {()=> btnCLick(true)} />
+        <img src={userLogo} onClick = {()=> btnCLick(false)}/>
         </div>);
 };

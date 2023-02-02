@@ -33,3 +33,12 @@
     height:20px;
     width: 300px;
 }
+
+.homePage {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
