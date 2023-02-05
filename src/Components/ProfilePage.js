@@ -10,8 +10,8 @@ export const ProfilePage = () => {
 
     return (
         <div className="profilePage">
-            {profileClicked == true ? <AllProfiles/>:<ProfileButton onClickBtn={onProfileClick} text= {"My profile"}/>}
-            <ProfileButton onClickBtn={() => {}} text= {"All profiles"}/>
+            <ProfileButton onClickBtn={() => {}} text= {"My Profile"}/>
+            {profileClicked == true ? <AllProfiles/>:<ProfileButton onClickBtn={onProfileClick} text= {"All profile"}/>}
             <ProfileButton onClickBtn={() => {}} text= {"Log Out"}/>
         </div>
     );
