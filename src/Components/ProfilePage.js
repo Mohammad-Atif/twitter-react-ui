@@ -7,11 +7,16 @@ export const ProfilePage = () => {
     const onProfileClick = () => {
         setProfileClicked(true);
     }
+    const handleCloseClick = () => {
+        setProfileClicked(()=> {
+            return false;
+        })
+    }
 
     return (
         <div className="profilePage">
             <ProfileButton onClickBtn={() => {}} text= {"My Profile"}/>
-            {profileClicked == true ? <AllProfiles/>:<ProfileButton onClickBtn={onProfileClick} text= {"All profile"}/>}
+            {profileClicked == true ? <AllProfiles onCloseClick={handleCloseClick}/>:<ProfileButton onClickBtn={onProfileClick} text= {"All profile"}/>}
             <ProfileButton onClickBtn={() => {}} text= {"Log Out"}/>
         </div>
     );

@@ -85,3 +85,10 @@
     align-items: center;
     padding: 12px;
 }
+
+.toClose {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 100%;
+}
